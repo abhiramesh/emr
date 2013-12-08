@@ -14,8 +14,21 @@
 			</div>
 		</div>
 		<div class="col-md-6 button-column">
-			<div class="start-button">
+			<div class="start-button" id="first-button">
 				Get early access!
+			</div>
+			<div class="start-form">
+				<%= form_for Beta.new, remote: true, :validate => true, :url => "/create_beta" do |f| %>
+					<%= f.email_field :email, :validate => true, :placeholder => "your@email.com", :class => "form-control beta-email" %>
+					<div>
+						<%= f.submit "Submit!", :class => "start-button start-button-2", :id => "second-button" %>
+					</div>
+				<% end %>
+			</div>
+			<div class="thank-you">
+				Thank you! We'll be in touch.
+				<br>
+				If you have any questions, email <a href="mailto:hello@belugahealth.com"> hello@belugahealth.com </a>
 			</div>
 		</div>
 	</div>
@@ -50,3 +63,9 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+$("#first-button").click(function(){
+	$("#first-button").hide();
+	$(".start-form").show();
+});
+</script>

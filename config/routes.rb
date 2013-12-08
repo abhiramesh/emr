@@ -1,6 +1,8 @@
 Emr::Application.routes.draw do
 
   root :to => 'static_pages#home'
+
+  post '/create_beta', :to => "static_pages#enroll_beta", :as => "enroll_beta"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
