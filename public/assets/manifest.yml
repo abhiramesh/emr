@@ -1,11 +1,23 @@
 ---
+Nexa Bold.otf: Nexa Bold-9e9d17c97f9f67edba67708702a81f81.otf
+Nexa Bold/index.otf: Nexa Bold-9e9d17c97f9f67edba67708702a81f81.otf
+Nexa Light.otf: Nexa Light-5d5c2f10317f31c9ff2fe7adacd6a4c5.otf
+Nexa Light/index.otf: Nexa Light-5d5c2f10317f31c9ff2fe7adacd6a4c5.otf
 montreal-demibold.ttf: montreal-demibold-99b03f16aa48f61e45b9658b298ef49f.ttf
 montreal-demibold/index.ttf: montreal-demibold-99b03f16aa48f61e45b9658b298ef49f.ttf
-logo.png: logo-3adffac9ca153b1be379c3a3d40fd110.png
-logo/index.png: logo-3adffac9ca153b1be379c3a3d40fd110.png
+access.png: access-2970c15f4515e63537026e46a0bee456.png
+access/index.png: access-2970c15f4515e63537026e46a0bee456.png
+easy.png: easy-d97a79a7d986d2f0f2f2d61e3065aadd.png
+easy/index.png: easy-d97a79a7d986d2f0f2f2d61e3065aadd.png
+fast.png: fast-3a92c1c2da39bde674f8de181f09358b.png
+fast/index.png: fast-3a92c1c2da39bde674f8de181f09358b.png
+logo.png: logo-94fe724033040c0d100d3b54fe2e7d3f.png
+logo/index.png: logo-94fe724033040c0d100d3b54fe2e7d3f.png
+secure.png: secure-049d912a8d1ec3c12aa3f735ff3ebde6.png
+secure/index.png: secure-049d912a8d1ec3c12aa3f735ff3ebde6.png
 application.js: application-7cbd610a12a5783c6b7a8a8745f980c0.js
 application/index.js: application-7cbd610a12a5783c6b7a8a8745f980c0.js
-application.css: application-222d8ea5036d4621099ad0437b980134.css
-application/index.css: application-222d8ea5036d4621099ad0437b980134.css
+application.css: application-ad649041d84c485435cc3550ccc994e8.css
+application/index.css: application-ad649041d84c485435cc3550ccc994e8.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map

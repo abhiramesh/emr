@@ -8,7 +8,7 @@ $blue: #00BFFF;
 $black: #313131;
 
 body{
-	background: $blue !important;
+	background: #F6F6F6 !important;
 }
 
 @font-face {
@@ -26,46 +26,79 @@ body{
     src: url('Nexa Bold.otf'); 
 }
 
-/* Landing Page */
-
-.home-content{
-	margin-top: 60px;
-} 
+/* Home Page */
 
 .logo-responsive {
+	max-width: 800px;
 	width: 100%;
-	max-width: 600px;
 }
 
-.phrasing{
-	font-family: 'Montreal';
-	padding-left: 10px;
+.home-box {
+	max-width: 835px;
 }
 
-.phrase-1{
+.tagline {
+	font-family: 'Nexa Light';
+	color: $blue;
+	font-size: 64px;
+	padding-top: 80px;
+	line-height: 60px;
+}
+
+.phrase-column {
+	float:left;
+	text-align:left;
+}
+
+.button-column {
+	float:right;
+}
+
+.phrase-1 {
+	font-family: 'Nexa Light';
 	color: $black;
-	font-size: 48px;
-	padding-top: 10px;
-	line-height: 42px;
-}
-
-.phrase-2{
-	color: white;
-	font-size: 38px;
+	font-size: 36px;
 	padding-top: 70px;
-	line-height: 40px;
+	line-height: 38px;
 }
 
-.phrase-3{
-	color: $black;
-	font-size: 38px;
+.phrase-2 {
+	font-family: 'Nexa Light';
+	color: $blue;
+	font-size: 36px;
 	padding-top: 10px;
-	line-height: 40px;
+	line-height: 38px;
 }
 
-.phrase-4{
+
+.start-button {
+	background: orange;
+	padding: 15px;
+	width: 300px;
+	border-radius: 8px;
 	color: white;
-	font-size: 42px;
-	padding-top: 70px;
-	line-height: 40px;
+	font-family: 'Nexa Light';
+	font-size: 22px;
+	margin-top: 70px;
+	text-align: center;
+	opacity: 0.8;
+	cursor: pointer;
 }
+
+.icons {
+	padding-top: 90px;
+
+	img {
+		max-width: 150px;
+		padding: 10px 0px;
+	}
+
+	.icolabel {
+		font-family: 'Nexa Light';
+		color: $black;
+		font-size: 26px;
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
+}
+
