@@ -8,6 +8,8 @@ Emr::Application.routes.draw do
     get '/logout', :to => "devise/sessions#destroy", :as => "logout"
   end
 
+  get '/my_dashboard', :to => "users#doctor_dashboard", :as => "doctor_dashboard"
+
   resources :users
 
 

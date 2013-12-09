@@ -7,9 +7,18 @@
 $blue: #00BFFF;
 $black: #313131;
 
+html {
+	height: 100%;
+}
+
 body{
 	background: #F6F6F6 !important;
 	font-family: 'Nexa Light';
+	height: 100%;
+}
+
+.container {
+	height: 100%;
 }
 
 .message {
