@@ -1,5 +1,16 @@
 Emr::Application.routes.draw do
 
+  resources :appointments
+
+  devise_for :users, :controllers => { :registrations => "registration" }
+
+  devise_scope :user do
+    get '/logout', :to => "devise/sessions#destroy", :as => "logout"
+  end
+
+  resources :users
+
+
   root :to => 'static_pages#home'
 
   post '/create_beta', :to => "static_pages#enroll_beta", :as => "enroll_beta"

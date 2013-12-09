@@ -1,0 +1,62 @@
+$blue: #00BFFF;
+$black: #313131;
+
+.devise-box {
+	margin-top: 50px;
+	background: white;
+	width: 90%;
+	max-width: 500px;
+	padding: 30px;
+	border-radius: 10px;
+	font-family: 'Nexa Light';
+	label {
+		padding-top: 15px;
+	}
+	input {
+		border: solid 1px #CCC;
+		border-radius: 8px;
+		padding: 10px;
+		height: 55px !important;
+		font-size: 16px !important;
+		width: 100%;
+		max-width: 300px;
+	}
+	input:focus {
+		outline: solid 1px $blue;
+	}
+
+	.submit {
+		background: orange;
+		padding: 15px;
+		width: 100%;
+		max-width: 300px;
+		border-radius: 8px;
+		color: white;
+		font-family: 'Nexa Light';
+		font-size: 22px;
+		margin: 20px 0px;
+		text-align: center;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+
+	#error {
+		color: red;
+	}
+
+	#notice {
+		color: $blue;
+	}
+
+	.flash {
+		color: red;
+	}
+
+}
+
+.devise-title {
+	font-family: 'Nexa Light';
+	font-size: 30px;
+	color: $black;
+	padding-bottom: 20px;
+}

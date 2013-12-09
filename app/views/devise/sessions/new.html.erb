@@ -1,0 +1,19 @@
+<div class="container devise-box" align="center">
+	<p id="error"><%= flash[:error] %></p>
+	<p id="notice"><%= flash[:notice] %></p>
+	<div class="devise-title">
+		Sign in
+	</div>
+	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+	  <div><%= f.label :email %><br />
+	  <%= f.email_field :email, :autofocus => true %></div>
+
+	  <div><%= f.label :password %><br />
+	  <%= f.password_field :password %></div>
+
+	  <div><%= f.submit "Sign in", :class => "submit" %></div>
+	<% end %>
+
+	<%= render "devise/shared/links" %>
+
+</div>

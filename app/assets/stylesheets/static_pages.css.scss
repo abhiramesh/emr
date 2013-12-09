@@ -38,6 +38,29 @@ body{
     src: url('Nexa Bold.otf'); 
 }
 
+a {
+	color: $black !important;
+	text-decoration: none !important;
+  }
+
+a:hover {
+	color: $blue !important;
+	.menu-item {
+		border: solid 1px $blue;
+	}
+}
+
+.menu-item {
+	cursor: pointer;
+	font-family: 'Nexa Light';
+	font-size: 18px;
+	border: solid 1px $black;
+	position: relative;
+	top: 25px;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+
 /* Home Page */
 
 .logo-responsive {
