@@ -10,7 +10,6 @@ gem 'json'
 gem 'pg', '0.14.1'
 gem 'newrelic_rpm'
 gem 'delayed_job_active_record'
-gem 'client_side_validations'
 gem 'mechanize'
 
 # Gems used only for assets and not required

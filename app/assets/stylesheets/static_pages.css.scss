@@ -9,6 +9,18 @@ $black: #313131;
 
 body{
 	background: #F6F6F6 !important;
+	font-family: 'Nexa Light';
+}
+
+.message {
+	font-family: 'Nexa Light';
+	font-size: 13px;
+	font-weight: bold;
+	color: red;
+	text-align: left;
+	padding-left: 5px;
+	display: inline-block;
+	padding-top: 10px;
 }
 
 @font-face {
@@ -31,6 +43,12 @@ body{
 .logo-responsive {
 	max-width: 800px;
 	width: 100%;
+}
+
+.logo-responsive-2 {
+	width: 100%;
+	max-width: 500px;
+	display: none;
 }
 
 .home-box {
@@ -95,7 +113,7 @@ body{
 	border: none;
 	font-size: 18px;
 	width: 80%;
-	max-width: 145px;
+	max-width: 113px;
 	padding: 15px;
 	margin-top: 0px;
 	float: right;
@@ -107,9 +125,9 @@ body{
 	padding: 10px;
 	height: 55px !important;
 	font-size: 16px !important;
-	max-width: 220px !important;
-	width: 52% !important;
 	float: left;
+	max-width: none !important;
+	width: 65% !important;
 }
 
 @media (max-width: 993px) {
@@ -125,6 +143,23 @@ body{
     max-width: none !important;
     margin-top: 10px;
 
+  }
+
+  .button-column {
+  	float: none;
+  }
+
+  .logo-responsive {
+  	display: none;
+  }
+
+  .logo-responsive-2 {
+  	display: block;
+  }
+
+  .phrase-column {
+	float:none;
+	text-align:center;
   }
 }
 

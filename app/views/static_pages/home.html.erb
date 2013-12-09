@@ -1,8 +1,8 @@
 <img src="/assets/logo.png" class="logo-responsive">
-
+<img src="/assets/small-logo.png" class="logo-responsive-2">
 <div class="container home-box" align="center">
 	<div class="tagline">
-		The EHR revolution is here.
+		The EHR revolution is here
 	</div>
 	<div class="row">
 		<div class="col-md-6 phrase-column">
@@ -18,11 +18,12 @@
 				Get early access!
 			</div>
 			<div class="start-form">
-				<%= form_for Beta.new, remote: true, :validate => true, :url => "/create_beta" do |f| %>
+				<%= form_for Beta.new, remote: true, :url => "/create_beta" do |f| %>
 					<%= f.email_field :email, :validate => true, :placeholder => "your@email.com", :class => "form-control beta-email" %>
 					<div>
 						<%= f.submit "Submit!", :class => "start-button start-button-2", :id => "second-button" %>
 					</div>
+					<div id="email_error" class="message"></div>
 				<% end %>
 			</div>
 			<div class="thank-you">
@@ -67,5 +68,24 @@
 $("#first-button").click(function(){
 	$("#first-button").hide();
 	$(".start-form").show();
+});
+
+$('input#beta_email').blur(function(event){
+	var email_format = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+	if (!email_format.test($('input#beta_email').val())) {
+		event.preventDefault();
+		$('#email_error').empty().append("Please enter a valid email");
+	}
+	if (email_format.test($('input#beta_email').val())) {
+		$('#email_error').empty();
+	}
+});
+
+$("#second-button").click(function(){
+	var email_format = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+	if (!email_format.test($('input#beta_email').val())) {
+		event.preventDefault();
+		$('#email_error').empty().append("Please enter a valid email");
+	}
 });
 </script>
