@@ -2,11 +2,41 @@ Emr::Application.routes.draw do
 
   resources :appointments
 
-  devise_for :users, :controllers => { :registrations => "registration" }
+  devise_for :users, :controllers => { :registrations => "registration" }, skip: [:sessions, :passwords, :confirmations, :registrations]
+  as :user do
+    get     '/login'  => 'devise/sessions#new',     as: 'new_user_session'
+    post    '/login'  => 'devise/sessions#create',  as: 'user_session'
+    get     '/logout' => 'devise/sessions#destroy', as: 'destroy_user_session'
+    delete  '/logout' => 'devise/sessions#destroy', as: 'destroy_user_session'
 
-  devise_scope :user do
-    get '/logout', :to => "devise/sessions#destroy", :as => "logout"
+    get   '/join' => 'devise/registrations#new',    as: 'new_user_registration'
+    post  '/join' => 'devise/registrations#create', as: 'user_registration'
+    
+    scope '/account' do
+      # password reset
+      get   '/reset-password'        => 'devise/passwords#new',    as: 'new_user_password'
+      put   '/reset-password'        => 'devise/passwords#update', as: 'user_password'
+      post  '/reset-password'        => 'devise/passwords#create'
+      get   '/reset-password/change' => 'devise/passwords#edit',   as: 'edit_user_password'
+
+      # confirmation
+      get   '/confirm'        => 'devise/confirmations#show',   as: 'user_confirmation'
+      post  '/confirm'        => 'devise/confirmations#create'
+      get   '/confirm/resend' => 'devise/confirmations#new',    as: 'new_user_confirmation'
+
+      # settings & cancellation
+      get '/cancel'   => 'devise/registrations#cancel', as: 'cancel_user_registration'
+      get '/settings' => 'devise/registrations#edit',   as: 'edit_user_registration'
+      put '/settings' => 'devise/registrations#update'
+
+      # account deletion
+      delete '' => 'devise/registrations#destroy'
+    end
   end
+
+  # devise_scope :user do
+  #   get '/logout', :to => "devise/sessions#destroy", :as => "logout"
+  # end
 
   get '/my_dashboard', :to => "users#doctor_dashboard", :as => "doctor_dashboard"
 

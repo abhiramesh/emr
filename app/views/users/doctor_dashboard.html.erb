@@ -1,0 +1,20 @@
+<%= content_for :head do %>
+  <%= stylesheet_link_tag "dash/dash.css" %>
+  <%= javascript_include_tag "dash/dash.js" %>
+<% end %>
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="box bordered">
+        <div class="box-header" >
+          <i class="icon-calendar"></i> <span id="calendar-title">Calendar</span>
+        </div>
+        <div class="row-fluid">
+          <div class="span12">
+            <div id='calendar' class="calendar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

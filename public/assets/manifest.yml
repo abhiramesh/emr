@@ -19,7 +19,7 @@ small-logo.png: small-logo-fa923aa9499d26188e1f33fb073a2828.png
 small-logo/index.png: small-logo-fa923aa9499d26188e1f33fb073a2828.png
 application.js: application-90dce78cb8eed31033fb66b4ace63bdd.js
 application/index.js: application-90dce78cb8eed31033fb66b4ace63bdd.js
-application.css: application-26009ce64211352d98e6a9acc713cc6f.css
-application/index.css: application-26009ce64211352d98e6a9acc713cc6f.css
+application.css: application-d624ba30422a3dc2f1d6a20c2f237043.css
+application/index.css: application-d624ba30422a3dc2f1d6a20c2f237043.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
